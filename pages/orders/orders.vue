@@ -69,7 +69,7 @@
 				}
 			}
 		},
-		async onLoad() {
+		async onShow() {
 			if(!this.$store.getters.isLogin) {
 				uni.navigateTo({url: '/pages/login/login'})
         return
@@ -100,7 +100,7 @@
 					this.orders = this.orders.concat(orders)
 					this.page += 1
 				}
-				
+				// console.log(orders)
 				uni.hideLoading()
 			},
 			detail(id) {

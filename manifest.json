@@ -63,7 +63,7 @@
         "setting" : {
             "urlCheck" : true,
             "es6" : false,
-            "minified" : false
+            "minified" : true
         },
         "usingComponents" : true,
         "permission" : {}

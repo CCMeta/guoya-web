@@ -202,11 +202,6 @@
 			"text": "订单",
 			"iconPath": "static/images/tabBar/take.png",
 			"selectedIconPath": "static/images/tabBar/take_selected.png"
-		}, {
-			"pagePath": "pages/menu/menu",
-			"text": "我？",
-			"iconPath": "static/images/tabBar/mine.png",
-			"selectedIconPath": "static/images/tabBar/mine_selected.png"
 		}]
 	},
 	"condition" : { //模式配置，仅开发期间生效

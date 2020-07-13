@@ -46,9 +46,10 @@ const store = new Vuex.Store({
 		}
 	},
 	actions: {
-		async getStore({commit}) {
-			const store = await api('store')
-			commit('SET_STORE', store)
+		async getStore({commit}, store) {
+			const old_store = await api('store')
+      // console.log(store)
+			commit('SET_STORE', {...old_store,'mobile':store})
 		}
 	}
 })

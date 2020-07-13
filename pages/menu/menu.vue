@@ -290,11 +290,15 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['SET_ORDER_TYPE']),
+		...mapMutations(['SET_ORDER_TYPE','SET_STORE']),
 		...mapActions(['getStore']),
 		async init() {	//页面初始化
 			this.loading = true
-			await this.getStore()
+      // return
+			// console.log(this)
+      const shop_mobile = await this.$fuck('index/getmobile')
+      this.getStore(shop_mobile)
+      // await console.log(this.store)
 			this.goods = await this.$fuck('goods')
 			// console.log(this.goods)
 			this.loading = false
